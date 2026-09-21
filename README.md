@@ -5,6 +5,7 @@
 ## 収録サイト
 
 - [construction-co](construction-co/) — 建築・工務店系「木結 -KIYUI- 建築工房」（[Live Demo](https://PlaTy563.github.io/portfolio-site/construction-co/)）
+- [it-consulting](it-consulting/) — ITコンサル系「SOLA Consulting」（[Live Demo](https://PlaTy563.github.io/portfolio-site/it-consulting/)）
 
 ## 技術構成
 
