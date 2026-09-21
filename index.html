@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Site</title>
+<meta name="description" content="制作実績・ポートフォリオ提示用のサンプルサイト集です。">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #171a24;
+    --line: rgba(255,255,255,0.1);
+    --text: #f2f3f7;
+    --muted: #9096ab;
+    --accent: #4a63ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Noto Sans JP", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6vw 1.5rem;
+  }
+  .wrap { max-width: 760px; width: 100%; }
+  h1 {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.6rem, 4vw, 2.3rem);
+    margin: 0 0 0.6rem;
+  }
+  p.lead { color: var(--muted); margin: 0 0 2.5rem; font-size: 0.95rem; line-height: 1.8; }
+  .list { display: grid; gap: 1rem; }
+  a.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.4rem 1.6rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+  }
+  a.card:hover { transform: translateY(-3px); border-color: var(--accent); }
+  .card-title { font-weight: 700; font-size: 1.05rem; }
+  .card-sub { color: var(--muted); font-size: 0.82rem; margin-top: 0.3rem; }
+  .arrow { color: var(--accent); font-size: 1.2rem; }
+  footer { margin-top: 2.5rem; font-size: 0.75rem; color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Portfolio Site</h1>
+    <p class="lead">制作実績・ポートフォリオ提示用のサンプルサイト集です。業種ごとに架空のクライアントを想定したTOPページを制作しています。</p>
+    <div class="list">
+      <a class="card" href="construction-co/">
+        <div>
+          <div class="card-title">construction-co</div>
+          <div class="card-sub">建築・工務店系「木結 -KIYUI- 建築工房」</div>
+        </div>
+        <span class="arrow">&#8594;</span>
+      </a>
+      <a class="card" href="it-consulting/">
+        <div>
+          <div class="card-title">it-consulting</div>
+          <div class="card-sub">ITコンサル系「SOLA Consulting」</div>
+        </div>
+        <span class="arrow">&#8594;</span>
+      </a>
+    </div>
+    <footer>※掲載している会社名・写真・連絡先はすべてサンプルのダミーです。</footer>
+  </div>
+</body>
+</html>
