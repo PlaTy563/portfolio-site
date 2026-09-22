@@ -91,5 +91,24 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
+  /* ---------- services tabs ---------- */
+  const tabsRoot = document.querySelector("[data-tabs]");
+  if (tabsRoot) {
+    const tabButtons = tabsRoot.querySelectorAll(".tabs-btn");
+    const tabPanels = tabsRoot.querySelectorAll(".tabs-panel");
+    tabButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const targetId = btn.dataset.tabTarget;
+        tabButtons.forEach((b) => {
+          b.classList.toggle("is-active", b === btn);
+          b.setAttribute("aria-selected", String(b === btn));
+        });
+        tabPanels.forEach((panel) => {
+          panel.classList.toggle("is-active", panel.id === targetId);
+        });
+      });
+    });
+  }
+
   onScroll();
 })();
