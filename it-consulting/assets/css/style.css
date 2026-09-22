@@ -165,10 +165,13 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 }
 .main-nav a:not(.nav-cta):hover::after { width: 100%; }
 
-.nav-cta {
+.main-nav a.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
   background: var(--gradient-brand);
   color: var(--color-white) !important;
-  padding: 0.6em 1.4em;
+  padding: 0.85em 1.7em;
   border-radius: 999px;
   transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
 }
